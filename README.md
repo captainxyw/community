@@ -18,7 +18,11 @@
 
 [Visual Paradigm](https://www.visual-paradigm.com/cn/)
 
+[Flyway](https://flywaydb.org/getstarted/firststeps/maven)
 ## 脚本
+```bash
+mvn flyway:migrate
+```
 ```sql
 create table USER
 (

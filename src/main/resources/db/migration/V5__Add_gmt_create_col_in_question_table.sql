@@ -1,0 +1,1 @@
+alter table question add column gmt_create bigint;
