@@ -3,6 +3,9 @@ package com.xuyewei.community.mapper;
 import com.xuyewei.community.model.Question;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * ClassName:QuestionMapper
@@ -14,7 +17,10 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface QuestionMapper {
-    @Insert("insert into question(title, description, gmt_modified, creator,  tag) " +
-            "values(#{title},#{description},#{gmtModified},#{creator},#{tag})")
-    public void create(Question question);
+    @Insert("insert into question(title, description, gmt_modified, gmt_create, creator,  tag) " +
+            "values(#{title},#{description},#{gmtModified},#{gmtCreate},#{creator},#{tag})")
+    void create(Question question);
+
+    @Select("select * from question")
+    List<Question> list();
 }
