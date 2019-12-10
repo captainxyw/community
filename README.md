@@ -29,6 +29,7 @@
 ## 脚本
 ```bash
 mvn flyway:migrate
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 ```
 ```sql
 create table USER
