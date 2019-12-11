@@ -4,6 +4,7 @@ import com.xuyewei.community.dto.PaginationDTO;
 import com.xuyewei.community.dto.QuestionDTO;
 import com.xuyewei.community.exception.CustomizeErrorCode;
 import com.xuyewei.community.exception.CustomizeException;
+import com.xuyewei.community.mapper.QuestionExtMapper;
 import com.xuyewei.community.mapper.QuestionMapper;
 import com.xuyewei.community.mapper.UserMapper;
 import com.xuyewei.community.model.Question;
@@ -31,6 +32,8 @@ public class QuestionService {
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private QuestionMapper questionMapper;
+    @Autowired
+    private QuestionExtMapper questionExtMapper;
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private UserMapper userMapper;
@@ -149,5 +152,13 @@ public class QuestionService {
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
         }
+    }
+
+    public void incView(Integer id) {
+        Question question = new Question();
+        question.setId(id);
+        question.setViewCount(1);
+        questionExtMapper.incView(question);
+
     }
 }
