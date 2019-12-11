@@ -2,6 +2,8 @@ package com.xuyewei.community.service;
 
 import com.xuyewei.community.dto.PaginationDTO;
 import com.xuyewei.community.dto.QuestionDTO;
+import com.xuyewei.community.exception.CustomizeErrorCode;
+import com.xuyewei.community.exception.CustomizeException;
 import com.xuyewei.community.mapper.QuestionMapper;
 import com.xuyewei.community.mapper.UserMapper;
 import com.xuyewei.community.model.Question;
@@ -115,6 +117,9 @@ public class QuestionService {
 
     public QuestionDTO getById(Integer id) {
         Question question = questionMapper.selectByPrimaryKey(id);
+        if (question == null) {
+            throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
+        }
         QuestionDTO questionDTO = new QuestionDTO();
         BeanUtils.copyProperties(question, questionDTO);
         User user = userMapper.selectByPrimaryKey(question.getCreator());
@@ -123,7 +128,7 @@ public class QuestionService {
     }
 
     public void createOrUpdate(Question question) {
-        if(question.getId() == null) {
+        if (question.getId() == null) {
             //创建
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
@@ -139,7 +144,10 @@ public class QuestionService {
 
             QuestionExample example = new QuestionExample();
             example.createCriteria().andIdEqualTo(question.getId());
-            questionMapper.updateByExampleSelective(updateQuestion, example);
+            int updated = questionMapper.updateByExampleSelective(updateQuestion, example);
+            if (updated != 1) {
+                throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
+            }
         }
     }
 }
