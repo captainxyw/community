@@ -2,6 +2,7 @@ package com.xuyewei.community.controller;
 
 import com.xuyewei.community.dto.CommentDTO;
 import com.xuyewei.community.dto.QuestionDTO;
+import com.xuyewei.community.enums.CommentTypeEnum;
 import com.xuyewei.community.service.CommentService;
 import com.xuyewei.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ public class QuestionController {
 
     @GetMapping("question/{id}")
     public String question(@PathVariable(name = "id") Long id, Model model) {
-        List<CommentDTO> comments = commentService.listByQuestionId(id);
+        List<CommentDTO> comments = commentService.listByTargetId(id, CommentTypeEnum.QUESTION);
         //增加阅读数
         questionService.incView(id);
         QuestionDTO questionDTO = questionService.getById(id);
