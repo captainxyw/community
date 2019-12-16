@@ -38,6 +38,7 @@ body {
 .question-tag {
     margin-right: 5px;
 }
+
 .question-related {
     line-height: 20px;
     font-size: 12px;
@@ -48,6 +49,14 @@ body {
 
 .question-logo {
     width: 50%;
+}
+
+
+
+.publish-tag-tab {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .community-menu {
