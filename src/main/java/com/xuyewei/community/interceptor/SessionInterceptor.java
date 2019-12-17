@@ -3,6 +3,7 @@ package com.xuyewei.community.interceptor;
 import com.xuyewei.community.mapper.UserMapper;
 import com.xuyewei.community.model.User;
 import com.xuyewei.community.model.UserExample;
+import com.xuyewei.community.service.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -26,6 +27,8 @@ public class SessionInterceptor implements HandlerInterceptor {
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     UserMapper userMapper;
+    @Autowired
+    private NotificationService notificationService;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -40,6 +43,8 @@ public class SessionInterceptor implements HandlerInterceptor {
                     List<User> users = userMapper.selectByExample(userExample);
                     if (users.size() != 0) {
                         request.getSession().setAttribute("user", users.get(0));
+                        Long unreadCount = notificationService.unreadCount(users.get(0).getId());
+                        request.getSession().setAttribute("unreadCount", unreadCount);
                     }
                     break;
                 }

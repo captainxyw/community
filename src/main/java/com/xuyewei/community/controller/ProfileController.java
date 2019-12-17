@@ -2,6 +2,7 @@ package com.xuyewei.community.controller;
 
 import com.xuyewei.community.dto.PaginationDTO;
 import com.xuyewei.community.model.User;
+import com.xuyewei.community.service.NotificationService;
 import com.xuyewei.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,6 +26,8 @@ public class ProfileController {
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private QuestionService questionService;
+    @Autowired
+    private NotificationService notificationService;
 
     @GetMapping("/profile/{action}")
     public String profile(HttpServletRequest request,
@@ -35,17 +38,19 @@ public class ProfileController {
         if(user == null) {
             return "redirect:/";
         }
-        if("questions".equals(action)) {
-            model.addAttribute("section", "questions");
+        if("data".equals(action)) {
+            model.addAttribute("section", "data");
             model.addAttribute("sectionName", "我的提问");
+            PaginationDTO paginationDTO = questionService.list(user.getId(), page, size);
+            model.addAttribute("pagination", paginationDTO);
         } else if("replies".equals(action)) {
+            PaginationDTO paginationDTO = notificationService.list(user.getId(), page, size);
             model.addAttribute("section", "replies");
+            model.addAttribute("pagination", paginationDTO);
             model.addAttribute("sectionName", "最新回复");
 
         }
 
-        PaginationDTO pagination = questionService.list(user.getId(), page, size);
-        model.addAttribute("pagination", pagination);
         return "profile";
     }
 }
