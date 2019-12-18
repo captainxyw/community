@@ -6,12 +6,18 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="/css/community.css"/>
+    <link rel="stylesheet" href="/css/editormd.preview.min.css">
+
+
+
 
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
     <script src="/js/moment.js"></script>
     <script src="/js/community.js" type="application/javascript"></script>
-
+    <script src="/js/editormd.min.js" type="application/javascript"></script>
+    <script src="/js/lib/marked.min.js"></script>
+    <script src="/js/lib/prettify.min.js"></script>
 
 </head>
 <body>
@@ -30,8 +36,16 @@
             </span>
                 <hr>
                 <!--内容-->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:text="${question.description}"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="question-view">
+                    <textarea style="display:none;" th:text="${question.description}">### Hello world!</textarea>
+                </div>
+                <script type="text/javascript">
+                    $(function() {
+                        editormd.markdownToHTML("question-view", {});
+                    });
+                </script>
                 <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
                 <!--标签-->
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <span class="label label-info question-tag" th:each=" tag : ${question.tag.split(',')}">
@@ -171,7 +185,7 @@
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4>就是个Logo</h4>
-                <img class="img-thumbnail question-logo" th:src="@{'/img/question.jpg'}"  alt="">
+                <img class="img-thumbnail question-logo" th:src="@{'/images/question.jpg'}"  alt="">
             </div>
             <!--相关问题-->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
