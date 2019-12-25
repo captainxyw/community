@@ -1,0 +1,98 @@
+2019-12-24 18:54:31.069  INFO 7312 --- [restartedMain] c.x.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-1G387J7S with PID 7312 (D:\xuyewei\IDEAworkspace\community\target\classes started by capta in D:\xuyewei\IDEAworkspace\community)
+2019-12-24 18:54:31.072  INFO 7312 --- [restartedMain] c.x.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-12-24 18:54:31.112  INFO 7312 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\capta\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/capta/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/capta/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/capta/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/capta/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/capta/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/capta/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-24 18:54:31.112  INFO 7312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-24 18:54:31.112  INFO 7312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-24 18:54:32.364  INFO 7312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-24 18:54:32.394  INFO 7312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-12-24 18:54:32.635  INFO 7312 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-24 18:54:32.989  INFO 7312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-12-24 18:54:32.996  INFO 7312 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-24 18:54:32.996  INFO 7312 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-24 18:54:32.998  INFO 7312 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-24 18:54:32.998  INFO 7312 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-24 18:54:32.998  INFO 7312 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-24 18:54:33.067  INFO 7312 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-24 18:54:33.205  INFO 7312 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-24 18:54:33.205  INFO 7312 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2092 ms
+2019-12-24 18:54:33.235  INFO 7312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-24 18:54:33.350  INFO 7312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-24 18:54:33.354  INFO 7312 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2019-12-24 18:54:33.496  INFO 7312 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-24 18:54:33.561  INFO 7312 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-24 18:54:33.692  INFO 7312 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-24 18:54:33.794  INFO 7312 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-24 18:54:33.965  INFO 7312 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-24 18:54:33.970  INFO 7312 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-24 18:54:33.982  INFO 7312 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-24 18:54:34.462  WARN 7312 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-24 18:54:34.559  INFO 7312 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-24 18:54:34.623  INFO 7312 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-24 18:54:35.310  INFO 7312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-12-24 18:54:35.312  INFO 7312 --- [restartedMain] c.x.community.CommunityApplication       : Started CommunityApplication in 4.593 seconds (JVM running for 6.047)
+2019-12-24 18:55:06.326  INFO 7312 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-24 18:55:06.326  INFO 7312 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-24 18:55:06.331  INFO 7312 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-12-24 18:55:06.430 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2019-12-24 18:55:06.437 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-24 18:55:06.444 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-24 18:55:06.445 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?, ? 
+2019-12-24 18:55:06.446 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2019-12-24 18:55:06.449 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.Q.selectBySearch                 : <==      Total: 5
+2019-12-24 18:55:06.449 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:06.450 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:06.450 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:06.455 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:06.455 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:06.455 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:06.456 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:06.456 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:06.456 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:06.456 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:06.456 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:06.457 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:06.457 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:06.457 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:06.457 DEBUG 7312 --- [http-nio-8887-exec-1] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:13.341 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.Q.selectByPrimaryKey             : ==>  Preparing: select ID, TITLE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG, GMT_CREATE , DESCRIPTION from QUESTION where ID = ? 
+2019-12-24 18:55:13.341 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.Q.selectByPrimaryKey             : ==> Parameters: 296(Long)
+2019-12-24 18:55:13.342 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.Q.selectByPrimaryKey             : <==      Total: 1
+2019-12-24 18:55:13.342 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:13.343 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:13.343 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:13.344 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.QuestionExtMapper.selectRelated  : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
+2019-12-24 18:55:13.345 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.QuestionExtMapper.selectRelated  : ==> Parameters: 296(Long), javascript(String)
+2019-12-24 18:55:13.347 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.QuestionExtMapper.selectRelated  : <==      Total: 1
+2019-12-24 18:55:13.371 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.CommentMapper.selectByExample    : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2019-12-24 18:55:13.372 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.CommentMapper.selectByExample    : ==> Parameters: 296(Long), 1(Integer)
+2019-12-24 18:55:13.372 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.m.CommentMapper.selectByExample    : <==      Total: 0
+2019-12-24 18:55:13.373 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.mapper.QuestionExtMapper.incView   : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT + ? where id=? 
+2019-12-24 18:55:13.375 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.mapper.QuestionExtMapper.incView   : ==> Parameters: 1(Integer), 296(Long)
+2019-12-24 18:55:13.379 DEBUG 7312 --- [http-nio-8887-exec-3] c.x.c.mapper.QuestionExtMapper.incView   : <==    Updates: 1
+2019-12-24 18:55:23.440 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.QuestionExtMapper.countBySearch  : ==>  Preparing: select count(*) from QUESTION 
+2019-12-24 18:55:23.440 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.QuestionExtMapper.countBySearch  : ==> Parameters: 
+2019-12-24 18:55:23.440 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.QuestionExtMapper.countBySearch  : <==      Total: 1
+2019-12-24 18:55:23.441 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.Q.selectBySearch                 : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?, ? 
+2019-12-24 18:55:23.441 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.Q.selectBySearch                 : ==> Parameters: 0(Integer), 5(Integer)
+2019-12-24 18:55:23.442 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.Q.selectBySearch                 : <==      Total: 5
+2019-12-24 18:55:23.443 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:23.443 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:23.443 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:23.444 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:23.445 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:23.446 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:23.446 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:23.446 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:23.447 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:23.448 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:23.448 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:23.448 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:23.448 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2019-12-24 18:55:23.448 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 164(Long)
+2019-12-24 18:55:23.449 DEBUG 7312 --- [http-nio-8887-exec-6] c.x.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2019-12-24 18:55:31.188 DEBUG 7312 --- [http-nio-8887-exec-8] c.x.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( ACCOUNT_ID = ? ) 
+2019-12-24 18:55:31.189 DEBUG 7312 --- [http-nio-8887-exec-8] c.x.c.mapper.UserMapper.selectByExample  : ==> Parameters: 17289160(String)
+2019-12-24 18:55:31.189 DEBUG 7312 --- [http-nio-8887-exec-8] c.x.c.mapper.UserMapper.selectByExample  : <==      Total: 1
+2019-12-24 18:55:31.189 DEBUG 7312 --- [http-nio-8887-exec-8] c.x.c.m.U.updateByExampleSelective       : ==>  Preparing: update USER SET NAME = ?, TOKEN = ?, GMT_MODIFIED = ?, AVATAR_URL = ? WHERE ( ID = ? ) 
+2019-12-24 18:55:31.189 DEBUG 7312 --- [http-nio-8887-exec-8] c.x.c.m.U.updateByExampleSelective       : ==> Parameters: Ben(String), 3304ba3c-5fbf-453d-99af-81c87286c04d(String), 1577184931189(Long), https://avatars3.githubusercontent.com/u/17289160?v=4(String), 164(Long)
+2019-12-24 18:55:31.189 DEBUG 7312 --- [http-nio-8887-exec-8] c.x.c.m.U.updateByExampleSelective       : <==    Updates: 1
