@@ -1,5 +1,5 @@
 # Captainxyw社区
-
+[课程地址](https://www.bilibili.com/video/av50200264?from=search&seid=18186217203843549655)
 ## 项目介绍
 这是一个问题、资料和资源的论坛。现有功能提问、回复、通知。
 
